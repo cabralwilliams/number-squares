@@ -1,0 +1,5 @@
+export const UPDATE_BOARD = "UPDATE_BOARD";
+export const RESET_BOARD = "RESET_BOARD";
+export const CHANGE_LEVEL = "CHANGE_LEVEL";
+export const UPDATE_ADDRESSES = "UPDATE_ADDRESSES";
+export const REGISTER_CLICK = "REGISTER_CLICK";

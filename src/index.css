@@ -1,0 +1,37 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+ */
+:root {
+    --evenColor: #ef91a1;
+    --oddColor: #a191ef;
+    --selectedColor: #729035;
+}
+
+.game-button {
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+}
+
+.bgColor_even {
+    background-color: var(--evenColor);
+}
+
+.bgColor_odd {
+    background-color: var(--oddColor);
+}
+
+.bgColor_selected {
+    background-color: var(--selectedColor);
+}
