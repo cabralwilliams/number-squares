@@ -5,7 +5,8 @@ import { generateBoard, reducer } from "./reducers";
 const initialState = {
     board: generateBoard(),
     gameLevel: 1,
-    gameScore: 0
+    gameScore: 0,
+    gameMode: 'multiples'
 }
 
 const store = createStore(reducer, initialState);

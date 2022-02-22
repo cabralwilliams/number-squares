@@ -1,4 +1,4 @@
-import { UPDATE_BOARD, RESET_BOARD, CHANGE_LEVEL, UPDATE_ADDRESSES, REGISTER_CLICK } from "./actions";
+import { UPDATE_BOARD, RESET_BOARD, CHANGE_LEVEL, UPDATE_ADDRESSES, REGISTER_CLICK, UPDATE_MODE, UPDATE_SCORE } from "./actions";
 export const generateBoard = () => {
     let output = [[],[],[],[]];
     for(let i = 0 ; i < 4; i++) {
@@ -26,6 +26,7 @@ export const reducer = (state, action) => {
                 for(let j = 0; j < 4; j++) {
                     nextRow.push({ squareValue: state.board[i][j].squareValue, isClicked: false, squareColor: state.board[i][j].squareColor });
                 }
+                copiedBoard.push(nextRow);
             }
             //Loop through the selectedAddresses to make the proper replacements to the squares
             for(let i = 0; i < action.selectedAddresses.length; i++) {
@@ -91,6 +92,10 @@ export const reducer = (state, action) => {
                 }
             }
             return { ...state, board: newBoard };
+        case UPDATE_MODE:
+            return { ...state, gameMode: action.gameMode };
+        case UPDATE_SCORE:
+            return { ...state, gameScore: state.gameScore + action.score };
         default:
             return { ...state };
     }

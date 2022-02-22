@@ -16,6 +16,7 @@ code {
     --evenColor: #ef91a1;
     --oddColor: #a191ef;
     --selectedColor: #729035;
+    --selectedFont: #F210B5;
 }
 
 .game-button {
@@ -34,4 +35,13 @@ code {
 
 .bgColor_selected {
     background-color: var(--selectedColor);
+}
+
+.submit-button {
+    font-size: 22px;
+    padding: 5px;
+    background-color: var(--selectedColor);
+    margin-bottom: 10px;
+    color: var(--selectedFont);
+    text-shadow: #000 1px 1px 2px;
 }
